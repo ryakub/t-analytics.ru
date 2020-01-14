@@ -1,0 +1,207 @@
+{% extends "t-auth/base.html" %}
+{% load static %}
+
+{% block navigation %}
+
+          <li class="nav-label">Pages</li>
+          <li class="nav-item with-sub active show">
+            <a href="" class="nav-link"><i data-feather="user"></i> <span>User Pages</span></a>
+            <ul>
+              <li><a href="page-profile-view.html">View Profile</a></li>
+              <li class="active"><a href="page-connections.html">Connections</a></li>
+              <li><a href="page-groups.html">Groups</a></li>
+              <li><a href="page-events.html">Events</a></li>
+            </ul>
+          </li>
+          <li class="nav-item with-sub">
+            <a href="" class="nav-link"><i data-feather="file"></i> <span>Other Pages</span></a>
+            <ul>
+              <li><a href="page-timeline.html">Timeline</a></li>
+            </ul>
+          </li>
+
+{% endblock %}
+
+{% block content %}
+      <div class="content-body">
+        <div class="container pd-x-0 tx-13">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb-style1 mg-b-5">
+              <li class="breadcrumb-item"><a href="#">Your Profile</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Connections</li>
+            </ol>
+          </nav>
+          <h4 class="mg-b-25">Connections</h4>
+              <ul class="nav nav-line nav-line-profile mg-b-30">
+                <li class="nav-item">
+                  <a href="" class="nav-link d-flex align-items-center active">Followers <span class="badge">340</span></a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">Following <span class="badge">1,563</span></a>
+                </li>
+                <li class="nav-item d-none d-sm-block">
+                  <a href="" class="nav-link">Request  <span class="badge">19</span></a>
+                </li>
+              </ul>
+
+              <div class="row row-xs mg-b-25 profile-list">
+                <div class="col-sm-4 col-md-3 col-lg-4 col-xl-3">
+                  <div class="card card-profile">
+                    <img src="https://via.placeholder.com/500" class="card-img-top" alt="">
+                    <div class="card-body tx-13">
+                      <div>
+                        <a href="">
+                          <div class="avatar avatar-lg"><img src="../https://via.placeholder.com/350" class="rounded-circle" alt=""></div>
+                        </a>
+                        <h5><a href="">Zhen Juan Chiu</a></h5>
+                        <p>Software Engineer</p>
+                        <button class="btn btn-block btn-white">Follow</button>
+                      </div>
+                    </div>
+                  </div><!-- card -->
+                </div><!-- col -->
+                <div class="col-sm-4 col-md-3 col-lg-4 col-xl-3 mg-t-10 mg-sm-t-0">
+                  <div class="card card-profile">
+                    <img src="https://via.placeholder.com/500x281" class="card-img-top" alt="">
+                    <div class="card-body tx-13">
+                      <div>
+                        <a href="">
+                          <div class="avatar avatar-lg"><img src="../https://via.placeholder.com/600" class="rounded-circle" alt=""></div>
+                        </a>
+                        <h5><a href="">Barbara Marion</a></h5>
+                        <p>Tech Executive</p>
+                        <button class="btn btn-block btn-white">Follow</button>
+                      </div>
+                    </div>
+                  </div><!-- card -->
+                </div><!-- col -->
+                <div class="col-sm-4 col-md-3 col-lg-4 col-xl-3 mg-t-10 mg-sm-t-0">
+                  <div class="card card-profile">
+                    <img src="https://via.placeholder.com/500" class="card-img-top" alt="">
+                    <div class="card-body tx-13">
+                      <div>
+                        <a href="">
+                          <div class="avatar avatar-lg"><span class="avatar-initial rounded-circle bg-teal">c</span></div>
+                        </a>
+                        <h5><a href="">Christine Arnold</a></h5>
+                        <p>Lead Designer</p>
+                        <button class="btn btn-block btn-primary">Unfollow</button>
+                      </div>
+                    </div>
+                  </div><!-- card -->
+                </div><!-- col -->
+                <div class="col-sm-4 col-md-3 col-lg-4 col-xl-3 mg-t-10 mg-md-t-0 mg-lg-t-10 mg-xl-t-0">
+                  <div class="card card-profile">
+                    <img src="https://via.placeholder.com/1000x666" class="card-img-top" alt="">
+                    <div class="card-body tx-13">
+                      <div>
+                        <a href="">
+                          <div class="avatar avatar-lg"><span class="avatar-initial rounded-circle bg-pink">n</span></div>
+                        </a>
+                        <h5><a href="">Natalie Corwin</a></h5>
+                        <p>Product Designer</p>
+                        <button class="btn btn-block btn-white">Follow</button>
+                      </div>
+                    </div>
+                  </div><!-- card -->
+                </div><!-- col -->
+                <div class="col-sm-4 col-md-3 col-lg-4 col-xl-3 mg-t-10">
+                  <div class="card card-profile">
+                    <img src="https://via.placeholder.com/1000x666" class="card-img-top" alt="">
+                    <div class="card-body tx-13">
+                      <div>
+                        <a href="">
+                          <div class="avatar avatar-lg"><span class="avatar-initial rounded-circle bg-gray-300">c</span></div>
+                        </a>
+                        <h5><a href="">Carolyn Park</a></h5>
+                        <p>Lead Designer</p>
+                        <button class="btn btn-block btn-white">Follow</button>
+                      </div>
+                    </div>
+                  </div><!-- card -->
+                </div><!-- col -->
+                <div class="col-sm-4 col-md-3 col-lg-4 col-xl-3 mg-t-10">
+                  <div class="card card-profile">
+                    <img src="https://via.placeholder.com/640x427" class="card-img-top" alt="">
+                    <div class="card-body tx-13">
+                      <div>
+                        <a href="">
+                          <div class="avatar avatar-lg"><span class="avatar-initial rounded-circle bg-gray-900">d</span></div>
+                        </a>
+                        <h5><a href="">Debbie Hite</a></h5>
+                        <p>Lead Animator</p>
+                        <button class="btn btn-block btn-primary">Unfollow</button>
+                      </div>
+                    </div><!-- card-body -->
+                  </div><!-- card -->
+                </div><!-- col -->
+                <div class="col-sm-4 col-md-3 col-lg-4 col-xl-3 mg-t-10">
+                  <div class="card card-profile">
+                    <img src="https://via.placeholder.com/640x360" class="card-img-top" alt="">
+                    <div class="card-body tx-13">
+                      <div>
+                        <a href="">
+                          <div class="avatar avatar-lg"><span class="avatar-initial rounded-circle bg-success">s</span></div>
+                        </a>
+                        <h5><a href="">Sandra Valles</a></h5>
+                        <p>Software Architect</p>
+                        <button class="btn btn-block btn-white">Follow</button>
+                      </div>
+                    </div><!-- card-body -->
+                  </div><!-- card -->
+                </div><!-- col -->
+                <div class="col-sm-4 col-md-3 col-lg-4 col-xl-3 mg-t-10">
+                  <div class="card card-profile">
+                    <img src="https://via.placeholder.com/640x426" class="card-img-top" alt="">
+                    <div class="card-body tx-13">
+                      <div>
+                        <a href="">
+                          <div class="avatar avatar-lg"><span class="avatar-initial rounded-circle bg-indigo">s</span></div>
+                        </a>
+                        <h5><a href="">Patrick Miramon</a></h5>
+                        <p>Software Engineer</p>
+                        <button class="btn btn-block btn-white">Follow</button>
+                      </div>
+                    </div><!-- card-body -->
+                  </div><!-- card -->
+                </div><!-- col -->
+                <div class="col-sm-4 col-md-3 col-lg-4 col-xl-3 mg-t-10">
+                  <div class="card card-profile">
+                    <img src="https://via.placeholder.com/640x360" class="card-img-top" alt="">
+                    <div class="card-body tx-13">
+                      <div>
+                        <a href="">
+                          <div class="avatar avatar-lg"><img src="../https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
+                        </a>
+                        <h5><a href="">Amalia Redfern</a></h5>
+                        <p>Front-end Engineer</p>
+                        <button class="btn btn-block btn-primary">Unfollow</button>
+                      </div>
+                    </div><!-- card-body -->
+                  </div><!-- card -->
+                </div><!-- col -->
+                <div class="col-sm-4 col-md-3 col-lg-4 col-xl-3 mg-t-10">
+                  <div class="card card-profile">
+                    <img src="https://via.placeholder.com/640x427" class="card-img-top" alt="">
+                    <div class="card-body tx-13">
+                      <div>
+                        <a href="">
+                          <div class="avatar avatar-lg"><img src="../https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
+                        </a>
+                        <h5><a href="">Carole Rossignol</a></h5>
+                        <p>Software Engineer</p>
+                        <button class="btn btn-block btn-white">Follow</button>
+                      </div>
+                    </div><!-- card-body -->
+                  </div><!-- card -->
+                </div><!-- col -->
+              </div><!-- row -->
+
+              <button class="btn btn-block btn-sm btn-white">Load more</button>
+
+
+
+        </div><!-- container -->
+
+
+{% endblock %}
