@@ -70,7 +70,7 @@ class vk:
                 all_clients.append(client)
             time.sleep(2)
         all_clients_df = pd.DataFrame(all_clients)
-        all_clients_df = df.rename(columns={'id': 'client_id', 'all_limit': 'client_all_limit', 'day_limit': 'client_day_limit',
+        all_clients_df = all_clients_df.rename(columns={'id': 'client_id', 'all_limit': 'client_all_limit', 'day_limit': 'client_day_limit',
                                     'name': 'client_name'})
         return all_clients_df
     def getCampaigns(self, account_id, client_id):
